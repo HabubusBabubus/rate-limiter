@@ -1,0 +1,4 @@
+# Keep LF line endings in the repository; Factorio reads both.
+* text=auto eol=lf
+*.png binary
+*.zip binary

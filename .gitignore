@@ -1,0 +1,22 @@
+# Build output (packed mod archives)
+dist/
+*.zip
+
+# Factorio logs that may be copied here while debugging
+*.log
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*~
+
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store
+$RECYCLE.BIN/
+
+# Files saved here by the Claude app
+Claude outputs/

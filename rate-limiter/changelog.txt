@@ -1,0 +1,23 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 20. 11. 2026
+  Features:
+    - Limit by output rate: choose a product (for machines with several products, such as oil refineries) and the wanted amount per second or per minute (kW or MW for electricity and heat). It is turned into a percentage of the machine's maximum and recalculated when modules, beacons, recipe, productivity or resource yield change.
+    - In rate mode the circuit network signal is the wanted output per minute (kW for electricity and heat).
+    - Reference block in the panel: output, input, fuel, electricity or fuel energy, and emissions at the current limit, with the maximum; per second or per minute.
+  Changes:
+    - Percentages are no longer rounded to tenths: any number of decimals is used as typed.
+    - If the game rounds the speed effect, the small remainder is corrected by rare pulses, so the result is exact.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 20. 11. 2026
+  Features:
+    - First release.
+    - Rate limit 0-100% (to tenths of a percent) for every machine that produces something: assemblers, furnaces, chemical plants, refineries, centrifuges, mining drills, pumpjacks, labs, rocket silos, boilers, heat exchangers, steam engines and turbines, reactors, solar panels, offshore pumps, and the Space Age machines (foundry, electromagnetic plant, cryogenic plant, biochamber, recycler, agricultural tower, asteroid collector, fusion reactor and generator, heating tower, captive spawner).
+    - Output, input, power and pollution scale together. Machines that accept modules slow down smoothly through script effects and keep the effect of the player's modules and beacons; below 20% and for other machines the rest is done by pulses.
+    - Panel with a slider, a number field and presets next to the machine window, also for ghosts.
+    - Selection tool (shortcut bar, Ctrl+Alt+R) to set the limit for many machines at once; Shift + drag resets to 100%.
+    - Limit from the circuit network: the chosen signal is the percentage.
+    - Limit shown in Alt mode.
+    - Kept in blueprints, copy/paste of settings (Shift+RMB / Shift+LMB), rebuilt ghosts, undo, fast-replace and upgrades.
+    - Commands /rl-reset-all (before removing the mod) and /rl-info.

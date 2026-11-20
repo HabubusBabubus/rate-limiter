@@ -1,0 +1,9 @@
+{
+  "name": "rate-limiter",
+  "version": "0.2.0",
+  "title": "Rate Limiter",
+  "author": "HABUBUS",
+  "factorio_version": "2.1",
+  "dependencies": ["base >= 2.1.13", "? space-age"],
+  "description": "Slow down any machine that produces something: assemblers, furnaces, drills, labs, boilers, generators, reactors, pumps. Set 0-100% or a wanted output rate in the machine window, with a selection tool or from the circuit network; output, input, power and pollution scale together."
+}
